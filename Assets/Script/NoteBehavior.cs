@@ -8,14 +8,19 @@ public class NoteBehavior : MonoBehaviour
     private GameManager.judges judge;
     private KeyCode keyCode;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         if (noteType == 1) keyCode = KeyCode.UpArrow;
         else if (noteType == 2) keyCode = KeyCode.DownArrow;
     }
+    public void Initialize()
+    {
+        judge = GameManager.judges.NONE;
+    }
 
-    // Update is called once per frame
+
+    
     void Update()
     {
         transform.Translate(Vector3.left * GameManager.instance.noteSpeed);
@@ -25,9 +30,10 @@ public class NoteBehavior : MonoBehaviour
             //해당 노트에 대한 판정 진행
             Debug.Log(judge);
             //노트가 판정 선에 닿기 시작한 이후로는 해당 노트를 제거.
-            if (judge != GameManager.judges.NONE) Destroy(gameObject);
+            if (judge != GameManager.judges.NONE) gameObject.SetActive(false);
         }
     }
+    /*
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "bad Line")
@@ -49,6 +55,7 @@ public class NoteBehavior : MonoBehaviour
         }
         Debug.Log(judge);
     }
+    */
 
     private void OnTriggerEnter(Collider other)
     {
@@ -67,7 +74,7 @@ public class NoteBehavior : MonoBehaviour
         else if (other.gameObject.tag == "Miss Line")
         {
             judge = GameManager.judges.MISS;
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
