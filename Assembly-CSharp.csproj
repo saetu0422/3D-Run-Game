@@ -67,6 +67,7 @@
     <Compile Include="Assets\Asste\GrassRoadRace\Script\CameraMove.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\NoteBehavior.cs" />
+    <Compile Include="Assets\Script\NoteController.cs" />
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>D:/UnityRhythmGame/Project/Unity-Rhythm-Game/3D RunGame/3D-Run-Game/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
