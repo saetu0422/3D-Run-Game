@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
         else if (instance != this) Destroy(gameObject);
     }
     public float noteSpeed;
+
+    public enum judges { NONE = 0, BAD, GOOD, PERFECT, MISS };
     void Start()
     {
         
