@@ -69,6 +69,8 @@
     <Compile Include="Assets\Script\NoteBehavior.cs" />
     <Compile Include="Assets\Script\NoteController.cs" />
     <Compile Include="Assets\Script\ObjectPooler.cs" />
+    <Compile Include="Assets\Script\PlayerInformation.cs" />
+    <None Include="Assets\Resources\Beats\1.txt" />
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>D:/UnityRhythmGame/Project/Unity-Rhythm-Game/3D RunGame/3D-Run-Game/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
     </Reference>

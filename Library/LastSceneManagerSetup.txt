@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Asste/GrassRoadRace/Scene_GrassRoadRace.unity
+- path: Assets/Scenes/GameResultScene.unity
   isLoaded: 1
   isActive: 1
